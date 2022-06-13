@@ -1,0 +1,103 @@
+:root{
+    --sidebar-bg-dark: #405189;
+    --sidebar-item-color-dark: #abb9e8;
+    --header-bg-color: #fff;
+    --search-bg: #f3f3f9;
+    --user-panel-bg: #f3f3f9;
+}
+
+.sidebar-dark{
+    background-color: var(--sidebar-bg-dark);
+}
+.bg-search{
+    background-color: var(--search-bg)!important;
+}
+.bg-user-panel{
+    background-color: var(--user-panel-bg)!important;
+}
+
+/* start navbar  */
+.main-header .navbar-nav:last-child  .nav-item{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header .navbar-nav:last-child  .nav-item:not(:last-child) .nav-link{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s ease-in;
+}
+.main-header .navbar-nav:last-child  .nav-item:last-child .nav-link{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    transition: .3s ease-in;
+    padding: 5px;
+}
+.main-header  .user-panel-img{
+    width: 40px;
+    height: 40px;
+}
+.main-header .navbar-nav:last-child  .nav-item:not(:last-child) .nav-link:hover{
+    background-color: rgba(53,119,241,.1);
+}
+.main-header .nav-link:hover i{
+    color: #3577f1;
+}
+.nav-sidebar .nav-item>.nav-link{
+    color: var(--sidebar-item-color-dark);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.main-header  .btn-navbar{
+    background-color: transparent !important;
+    border: none !important;
+}
+.form-control-navbar{
+    width: 100%;
+    padding-right: 100px;
+}
+.input-group-append{
+    z-index: 9;
+}
+.form-control-navbar:focus{
+    box-shadow: none !important;
+}
+.main-header .badge{
+    position: absolute!important;
+    left: -5px!important;
+    top: -5px!important;
+    width: 20px!important;
+    height: 20px!important;
+    padding: 0 !important;
+    line-height: 22px !important;
+    border-radius: 50%!important;
+}
+.user-panel-img{
+    width: 2.5rem
+}
+
+@media screen and (max-width:700px) {
+    .user-panel-content{
+        display: none;
+    }
+}
+/* end navbar  */
+
+
+/* start sidebar  */
+.sidebar  .nav-item.menu-open .nav-content i{
+    transform: rotate(-90deg);
+}
+.sidebar  .nav.nav-treeview{
+    padding: 8px 16px;
+}
+/* end sidebar  */
